@@ -1,3 +1,3 @@
 function updateState(){
-    db.ref('state').on("value", (data)=>{state = data});
+    db.ref('state').on("value", (data)=>{state = data.val();});
 }
